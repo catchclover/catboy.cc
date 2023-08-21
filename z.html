@@ -1,17 +1,214 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business website</title>
+    <title>clover</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="awesomefavicon.png">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://heroin.cf/a.css" rel="stylesheet">
+    <link href="https://heroin.cf/layout.css" rel="stylesheet">
+    <title>clover</title>
+    <link type="application/json+oembed" href="https://cdn.heroin.gg/heroin.json">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--below is profile picture-->
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="catboy.cc">
+    <meta property="og:description" content="1clover">
+    <meta name="viewport" content="width=device-width">
+    <style>
+      .profile-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      .button-container {
+        margin-top: 20px;
+      }
+      .button-container a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        background-color: #ccc;
+        color: #000;
+        text-decoration: none;
+      }
+      .spotify-embed-container {
+        width: 100%;
+        max-width: 600px;
+        /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      /* Reset some default styles */
+      body,
+      html {
+        height: 100%;
+        cursor: url("cursor.cur"), auto;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* Header styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      /* Set page background color */
+      body {
+        background-image: url('https://cdn.heroin.cf/black.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* Profile styles */
+      .profile {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+      .profile h2 {
+        margin: 0;
+      }
+      .profile p {
+        margin: 10px 0;
+      }
+      .social-links {
+        margin-top: 20px;
+      }
+      .social-links a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #333;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .social-links a:hover {
+        background-color: #00ff00;
+      }
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        /* Cursor styles */
+        body.custom-cursor {
+          cursor: none;
+        }
+        .custom-cursor {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          pointer-events: none;
+          z-index: 9999;
+        }
+        .custom-cursor img {
+          position: absolute;
+          pointer-events: none;
+        }
+    </style>
+    <style>
+      .btn.btn-outline-primary {
+        color: #70787c;
+        border-color: #70787c;
+      }
+      .btn.btn-outline-primary:hover {
+        color: #fff;
+        background-color: #70787c;
+        border-color: #70787c;
+      }
+    </style>
+    <style>
+      .badge {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+      }
+      .badge img {
+        vertical-align: middle;
+      }
+      .badge-text {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+      }
+      .badge-popup {
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
+      }
+      .badge:hover .badge-popup {
+        top: -130%;
+        opacity: 1;
+      }
+    </style>
+    <link href="https://heroin.cf/layout.css" rel="stylesheet">
   </head>
-  <body>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./service.html">Service</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+      <div class="selection:bg-primary/20">
+        <div class="w-full min-h-screen absolute top-0 ">
+          <section class="py-6">
+            <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+              <h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">&ZeroWidthSpace;</h1>
+              <div class="grid md:grid-cols-1 md:grid-rows-1 lg:grid-cols-1 lg:grid-rows-1 gap-4 content-center grid-cols-1 sm:grid-rows-2 sm:grid-cols-1 ">
+                <div class="w-full h-full flex justify-center items-center">
+                  <div class="bg-backgroundSecondary w-[32rem] rounded-md shadow-xl p-10">
+                    <div class="flex flex-col justify-center items-center w-full h-full flex-row">
+                      <div class="avatar avatar-xl w-20 h-20"><img src="https://pbs.twimg.com/profile_images/1688654745974853632/ZEBja4zq_400x400.jpg" width="" alt=""></div>
+                      <div class="text-center mt-[.5rem]">
+                        <p class="text-2xl font-bold bg-clip-text">clover</p>
+                        <div class="badges">
+                          <div class="badge">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACC0lEQVR4nKXVW4hPURTH8RkxpEFCyjUyIymUeXNPSnIrMYaE3PIiL4gHIrklT8otTXnx5BIPahIjuRRSKCUv8oLEPEzC0Ec76z+dTtO/8//PqVN77f1rfffaa+21a2oq+HASG3qYH487GFqJv7yTWnzFbxzFMNRhKT7iL5b3BjAZPzALL/z/Euwb9qAVx3sD2ISHGXs0pqBf2FvR3hvAJZwosz41IqyrFvAaKyMXIzLzAzAYffAdTdU4HxJJHImJuJZZa8G+GKdK2lUNYDHeF9AdxNVqAIdxpYBuET5UA2jDzgK6QfiDMZU474MOzCiof4XVlQCmoRN9C+rP40wlgB24W4F+I55UAmiN3rMAa8roZmMdGvEr3Y+igHdYgm24X0Z3EafiIn5JPauI8+FxwVLnnBnJrs3s+FBG+xxrY3wrNcAigGV4G+PUmn+iIewUUVtubVLY+3G9COAYLud22dIDoCkX3Xx8LgJoT204Y1/A6R4AqdLuZXQD0ZX6VvYyTUB9DtCRzj5jby85ygG6wRntG6xKg3o8jV7eFcewPkSdOUB3onOAZ6WjywGa06AZL9NNxdio5bkhupnLQf+o8YYSIJPgxoxuTuhGlRKSHootqYfk/gPx9t7AZozDI5xLb0I89qnTfopjnocjEfnebDi78TiOp9yfkjk9dp5q/SweYGEAUlHcxoqS839Asj+c71KoFgAAAABJRU5ErkJggg==">
+                            <div class="badge-popup">
+                              <span>awesome cat!!! :3</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divider">stuff</div>
+                    <div class="flex justify-center items-middle">
+                      <!--below is link buttons-->
+                      <ul class="grid grid-cols-2 h-full w-full grid-rows-1 gap-4"><a class="px-8 py-3 m-2 text-lg btn btn-outline-primary" href="https://namemc.com/8clover">namemc</a><a class="px-8 py-3 m-2 text-lg btn btn-outline-primary" href="https://open.spotify.com/artist/1JvGlRuJ9xxAFIXISbjllv">reupload page</a><a class="px-8 py-3 m-2 text-lg btn btn-outline-primary" href="https://sound">soundcloud</a> <a class="px-8 py-3 m-2 text-lg btn btn-outline-primary" href="https://open.spotify.com/playlist/3l872cRbs6OgAPx4kfrcE6">playlist</a></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+  </html>
