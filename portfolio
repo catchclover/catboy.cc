@@ -1,1 +1,11 @@
-<meta http-equiv="Refresh" content="0; url='https://www.w3docs.com'"/>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirect</title>
+     <meta charset="UTF-8" />
+     <meta http-equiv="refresh" content="3; URL=https://www.hubspot.com/" />
+   </head>
+   <body>
+     <p>Redirecting... If you haven't been redirected, click <a href="https://www.hubspot.com/">here</a>.</p>
+   </body>
+</html>
